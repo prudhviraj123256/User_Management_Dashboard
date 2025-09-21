@@ -1,70 +1,94 @@
-# Getting Started with Create React App
+Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple User Management Dashboard built with React. It demonstrates CRUD (Create, Read, Update, Delete) operations using a mock API (JSONPlaceholder) and includes features such as pagination, filtering, sorting, client-side validation, and responsive design. The primary focus is on functionality with a clean, human-approachable codebase.
 
-## Available Scripts
+Features
+1. View user list with details: ID, First Name, Last Name, Email, Department
+2. Add new users with validation
+3. Edit existing user details
+4. Delete users with confirmation
+5. Pagination with page size options: 10, 25, 50, 100
+6. Filter users by first name, last name, email, department
+7. Client-side validation with descriptive error messages
+8. Error handling for API failures
+9. Responsive UI for different screen sizes
 
-In the project directory, you can run:
+Setup & Run Instructions
 
-### `npm start`
+1. Clone the repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    git clone [repo-url]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    cd user-management-dashboard
 
-### `npm test`
+2. Install dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    npm install
 
-### `npm run build`
+3. Start the development server
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    npm start (This will launch the app in your browser at http://localhost:3000)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Run tests
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    npm test  (This project uses React Testing Library and Jest via Create React App. Test configurations are managed internally for convenience)
 
-### `npm run eject`
+Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+/src
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+      /components          (Reusable UI components like UserList, UserForm, Pagination, FilterPopup)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+      /services            (API service functions in userService.js)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+      /utils               (Utility functions like validation.js)
 
-## Learn More
+      App.js               (It is the Main application logic including state and handlers)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+      index.js             (It is the React entry point)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+      /tests               (Unit tests for components)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Dependencies
 
-### Analyzing the Bundle Size
+This project was bootstrapped with React App and uses the following dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    React ^19.1.1
 
-### Making a Progressive Web App
+    React-DOM ^19.1.1
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    React Scripts ^5.0.1
 
-### Advanced Configuration
+    Axios ^1.12.2 (for API calls)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    React Testing Library ^16.3.0 (for unit tests)
 
-### Deployment
+    Jest (bundled with CRA for testing)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+All dependencies are managed via package.json. Run npm install to install them.
 
-### `npm run build` fails to minify
+Challenges Faced
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Simulating the full CRUD behavior with JSONPlaceholder which does not persist data changed through POST/PUT/DELETE requests.
+2. Parsing user name data into first and last names, as the API returns a single 'name' string.
+3. Handling pagination and filtering efficiently on the client side with limited API capabilities.
+4. Implementing proper form validation and user feedback for error states.
+
+Future Improvements
+
+1. Replace mock API with a real backend to persist changes.
+2. Add infinite scrolling as an alternative pagination option.
+3. Enhance UI with better styling and animations.
+4. Expand unit test coverage for all components and API calls.
+5. Introduce context or state management libraries (e.g., Redux) for larger scale state handling.
+6. Add search and advanced sorting options on all user properties.
+
+
+Contact
+
+Author: Sai Prudhvi Raj
+
+Email: prudhviperuri@gmail.com
+
+GitHub: https://github.com/prudhviraj123256
