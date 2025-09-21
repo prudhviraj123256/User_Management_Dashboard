@@ -31,7 +31,7 @@ Setup & Run Instructions
 
 4. Run tests
 
-    npm test  (Runs unit tests built with React Testing Library and Jest)
+    npm test  (This project uses React Testing Library and Jest via Create React App. Test configurations are managed internally for convenience)
 
 Project Structure
 
