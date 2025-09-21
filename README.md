@@ -1,4 +1,5 @@
 Description
+
 This project is a simple User Management Dashboard built with React. It demonstrates CRUD (Create, Read, Update, Delete) operations using a mock API (JSONPlaceholder) and includes features such as pagination, filtering, sorting, client-side validation, and responsive design. The primary focus is on functionality with a clean, human-approachable codebase.
 
 Features
@@ -13,6 +14,7 @@ Features
 9. Responsive UI for different screen sizes
 
 Setup & Run Instructions
+
 1. Clone the repository
 git clone [repo-url]
 cd user-management-dashboard
@@ -24,6 +26,7 @@ npm install
 npm start (This will launch the app in your browser at http://localhost:3000.)
 
 Project Structure
+
 /src
   /components      # Reusable UI components like UserList, UserForm, Pagination, FilterPopup
   /services        # API service functions in userService.js
@@ -33,12 +36,14 @@ Project Structure
 
 
 Challenges Faced
+
 1. Simulating the full CRUD behavior with JSONPlaceholder which does not persist data changed through POST/PUT/DELETE requests.
 2. Parsing user name data into first and last names, as the API returns a single 'name' string.
 3. Handling pagination and filtering efficiently on the client side with limited API capabilities.
 4. Implementing proper form validation and user feedback for error states.
 
 Future Improvements
+
 1. Replace mock API with a real backend to persist changes.
 2. Add infinite scrolling as an alternative pagination option.
 3. Enhance UI with better styling and animations.
