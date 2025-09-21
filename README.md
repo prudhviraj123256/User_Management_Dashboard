@@ -86,6 +86,9 @@ Future Improvements
 
 
 Contact
+
 Author: Sai Prudhvi Raj
+
 Email: prudhviperuri@gmail.com
+
 GitHub: https://github.com/prudhviraj123256
