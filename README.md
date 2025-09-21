@@ -17,32 +17,37 @@ Setup & Run Instructions
 
 1. Clone the repository
 
-git clone [repo-url]
+    git clone [repo-url]
 
-cd user-management-dashboard
+    cd user-management-dashboard
+
 2. Install dependencies
 
-npm install
+    npm install
+
 3. Start the development server
 
-npm start (This will launch the app in your browser at http://localhost:3000)
+    npm start (This will launch the app in your browser at http://localhost:3000)
+
 4. Run tests
 
-npm test  (Runs unit tests built with React Testing Library and Jest)
+    npm test  (Runs unit tests built with React Testing Library and Jest)
 
 Project Structure
 
 /src
 
-  /components          (Reusable UI components like UserList, UserForm, Pagination, FilterPopup)
+      /components          (Reusable UI components like UserList, UserForm, Pagination, FilterPopup)
 
-  /services            (API service functions in userService.js)
+      /services            (API service functions in userService.js)
 
-  /utils               (Utility functions like validation.js)
+      /utils               (Utility functions like validation.js)
 
-  App.js               (It is the Main application logic including state and handlers)
+      App.js               (It is the Main application logic including state and handlers)
 
-  index.js             (It is the React entry point)
+      index.js             (It is the React entry point)
+
+      /tests               (Unit tests for components)
 
 
 Challenges Faced
