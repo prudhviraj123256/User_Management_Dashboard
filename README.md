@@ -26,10 +26,15 @@ npm start (This will launch the app in your browser at http://localhost:3000.)
 Project Structure
 
 /src
+
   /components      # Reusable UI components like UserList, UserForm, Pagination, FilterPopup
+
   /services        # API service functions in userService.js
+
   /utils           # Utility functions like validation.js
+
   App.js           # Main application logic including state and handlers
+
   index.js         # React entry point
 
 
