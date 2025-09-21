@@ -27,15 +27,15 @@ Project Structure
 
 /src
 
-  /components      # Reusable UI components like UserList, UserForm, Pagination, FilterPopup
+  /components          (Reusable UI components like UserList, UserForm, Pagination, FilterPopup)
 
-  /services        # API service functions in userService.js
+  /services            (API service functions in userService.js)
 
-  /utils           # Utility functions like validation.js
+  /utils               (Utility functions like validation.js)
 
-  App.js           # Main application logic including state and handlers
+  App.js               (It is the Main application logic including state and handlers)
 
-  index.js         # React entry point
+  index.js             (It is the React entry point)
 
 
 Challenges Faced
