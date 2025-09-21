@@ -21,7 +21,9 @@ cd user-management-dashboard
 2. Install dependencies
 npm install
 3. Start the development server
-npm start (This will launch the app in your browser at http://localhost:3000.)
+npm start (This will launch the app in your browser at http://localhost:3000)
+4. Run tests
+npm test  (Runs unit tests built with React Testing Library and Jest)
 
 Project Structure
 
