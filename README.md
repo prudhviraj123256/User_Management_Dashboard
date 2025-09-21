@@ -50,6 +50,24 @@ Project Structure
       /tests               (Unit tests for components)
 
 
+Dependencies
+
+This project was bootstrapped with React App and uses the following dependencies:
+
+    React ^19.1.1
+
+    React-DOM ^19.1.1
+
+    React Scripts ^5.0.1
+
+    Axios ^1.12.2 (for API calls)
+
+    React Testing Library ^16.3.0 (for unit tests)
+
+    Jest (bundled with CRA for testing)
+
+All dependencies are managed via package.json. Run npm install to install them.
+
 Challenges Faced
 
 1. Simulating the full CRUD behavior with JSONPlaceholder which does not persist data changed through POST/PUT/DELETE requests.
@@ -65,3 +83,9 @@ Future Improvements
 4. Expand unit test coverage for all components and API calls.
 5. Introduce context or state management libraries (e.g., Redux) for larger scale state handling.
 6. Add search and advanced sorting options on all user properties.
+
+
+Contact
+Author: Sai Prudhvi Raj
+Email: prudhviperuri@gmail.com
+GitHub: https://github.com/prudhviraj123256
