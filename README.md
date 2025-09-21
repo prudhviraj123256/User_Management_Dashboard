@@ -18,10 +18,8 @@ Setup & Run Instructions
 1. Clone the repository
 git clone [repo-url]
 cd user-management-dashboard
-
 2. Install dependencies
 npm install
-
 3. Start the development server
 npm start (This will launch the app in your browser at http://localhost:3000.)
 
